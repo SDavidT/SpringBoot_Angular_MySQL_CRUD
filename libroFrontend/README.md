@@ -1,27 +1,28 @@
-# CrudFRONT
+# Frontend del CRUD
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.4.
+## Requerimientos 
 
-## Development server
+El proyecto requiere:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+1. Angular
+2. IDE Visual Studio Code
 
-## Code scaffolding
+El proyecto se desarrolló con las siguientes versiones:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. Angular - 8 o superiores
 
-## Build
+## PUESTA EN MARCHA
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+1. Descargar el proyecto en zip 
 
-## Running unit tests
+2. Descomprimir el archivo y abrir el folder `libroFrontend` en el IDE VSC 
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+**3. Ejecutar el comando siguiente en consola para descarga de los paquetes necesarios**
 
-## Running end-to-end tests
+```bash
+npm install
+```
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Acceder atraves de  <http://localhost:4200>.
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
