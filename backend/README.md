@@ -1,43 +1,37 @@
-# Backend_CRUD_SpringBoot
-Desarrollo de un servicio RESTFul CRUD API empleando Springboot como herramienta de desarrllo para Backend, uso de JPA y conexión con MySQL como DB.
+# Backend del CRUD
 
 ## Requerimientos 
 
-El proyecto requiere
+El proyecto requiere:
 
-1. IDE para manejo de proyectos maven SpringBoot (NetBeans, SST4, VSC)
+1. IDE para manejo de proyectos Maven SpringBoot como (NetBeans, SST4, VSC) en este proyecto se desarrlló en VIsual Studio Code 
 2. MySQL 
 3. Navegador (Chrome)
 
-El proyecto se desarrolló con las siguientes versiones
+El proyecto se desarrolló con las siguientes versiones:
 
 1. JDK - 11.0.2
 2. Maven - 2.7.3
 3. Java - 11
-3. MySQL - 8
+4. MySQL - 8
 
 
 ## PUESTA EN MARCHA
 
-**1. Clonar el repositorio en el IDE de preferencia**
+1. Descargar el proyecto en zip 
 
-```bash
-git clone https://github.com/SDavidT/Backend_CRUD_SpringBoot.git
-```
+2. Descomprimir el archivo y abrir el folder `backend` en uno de los IDE que soporte SpringBoot 
 
-**2. Crear una base de datos libreria**
- 
-Cargar el archivo .sql
+3. Cargar y ejecutar el archivo `DB.sql` en MySQL para la generación de la DB 
 
-
-**3. Cambiar el usuario y contraseña para conexión con el DB**
+**4. Cambiar el usuario y contraseña para conexión con el DB**
 
 + Ubicarse en `src/main/resources/application.properties`
 
 + cambiar `spring.datasource.username`  
 + cambiar `spring.datasource.password` 
 
-**4. Construir y correr el proyecto Maven**
+**5. Construir y correr el proyecto Maven**
 
 Ejecutar el comando siguiente en consola
 
@@ -45,21 +39,25 @@ Ejecutar el comando siguiente en consola
 .\mvnw spring-boot:run
 ```
 
-Acceder atraves de  <http://localhost:8080/api/libros>.
+Acceder atraves de  <http://localhost:8080/producto/lista>.
 
 ## Pruebas del CRUD
 
 Se recomienda el uso de PostMan como plataforma de testeo de la API
 
-Para lectura de datos del DB
-   + GET /api/libros
-    
-Para borrar un registro del DB
-   + DELETE /api/libros/{Id}
+Para crear un registro del DB
+   + POST /create
 
-Para guardar un registro del DB
-   + POST /api/notes
-    
+Para lectura de datos del DB
+   + GET /producto/lista
+   
 Para actualizar un registro del DB
-   + PUT /api/notes/{noteId}
+   + PUT /update/{id}
+
+Para borrar un registro del DB
+   + DELETE /delete/{id}
+
+
+    
+
     
