@@ -1,0 +1,49 @@
+<div class="container">
+  <div class="card" style="margin-top: 60px">
+      <div class="card-header" >
+        <h3>Libros</h3>
+      </div>
+      <div class="card-body">
+        <table class="table table-hover" >
+          <thead>
+            <tr>
+              <th scope="col">Id</th>
+              <th scope="col">Nombre</th>
+              <th scope="col">Descipcion</th>
+              <th scope="col">Autor</th>
+              <th scope="col">Fecha</th>
+              <th scope="col">Ejemplares</th>
+              <th scope="col">Precio</th>
+              <th scope="col">Ver</th>
+              <th scope="col">Editar</th>
+              <th scope="col">Borrar</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let producto of productos">
+              <td>{{producto.id}}</td>
+              <td>{{producto.nombre}}</td>
+              <td>{{producto.descripcion}}</td>
+              <td>{{producto.autor}}</td>
+              <td>{{producto.fecha}}</td>
+              <td>{{producto.ejemplares}}</td>
+              <td>$ {{producto.precio}}</td>
+              <td><button class="btn btn-outline-primary" routerLink="/detalle/{{producto.id}}"><i class="far fa-eye"></i> Ver</button></td>
+              <td><button class="btn btn-outline-warning" routerLink="/editar/{{producto.id}}"><i class="far fa-edit"></i> Editar</button></td>
+              <td><button class="btn btn-outline-danger" (click)="borrar(producto.id)"><i class="far fa-trash-alt"></i> Eliminar</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+  </div>
+  
+</div>
+  
+  
+
+
+
+
+
+  
+  
