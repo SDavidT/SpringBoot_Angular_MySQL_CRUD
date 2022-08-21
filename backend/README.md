@@ -47,15 +47,23 @@ Se recomienda el uso de PostMan como plataforma de testeo de la API
 
 Para crear un registro del DB
    + POST /create
+   
+   [![Crear.jpg](https://i.postimg.cc/VN6KR4ZW/Crear.jpg)](https://postimg.cc/pmwQVQHm)
 
 Para lectura de datos del DB
    + GET /producto/lista
    
+   [![Listar.jpg](https://i.postimg.cc/CKQm6DWT/Listar.jpg)](https://postimg.cc/VSXqJSfD)
+   
 Para actualizar un registro del DB
    + PUT /update/{id}
+   
+   [![Actualizado.jpg](https://i.postimg.cc/4yCwXGfW/Actualizado.jpg)](https://postimg.cc/Q9bcqRW7)
 
 Para borrar un registro del DB
    + DELETE /delete/{id}
+   
+   [![Eliminado.jpg](https://i.postimg.cc/7P7mm59d/Eliminado.jpg)](https://postimg.cc/WtNG4bQw)
 
 
     
